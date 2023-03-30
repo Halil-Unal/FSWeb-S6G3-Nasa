@@ -3,6 +3,7 @@ import React from "react";
 
 export default function BiComponent(props) {
   const { data, dateChange, currentDate } = props;
+  
   function dateChangeHandler(e) {
     console.log(e.target.value);
     dateChange(e.target.value);
@@ -24,6 +25,7 @@ export default function BiComponent(props) {
       <img src={data.hdurl} alt={data.title} width="500" height="600" />
       <p>{data.service_version}</p>
       <p>{data.title}</p>
+      
       <p>{data.url}</p>
     </div>
   );
